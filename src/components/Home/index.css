@@ -1,0 +1,69 @@
+/* src/pages/Home.css */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    color: #333;
+  }
+  .main-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.header{
+    margin-left: 20px;
+}
+.content{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Roboto';
+
+}
+.heading{
+    color:#333;
+    font-family: 'Roboto';
+}
+.description{
+    color: #333;
+    font-family: 'Roboto';
+}
+.image{
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+}
+.image-container{
+    align-self: center;
+}
+.name{
+    color: #333;
+    font-family: 'Roboto';
+    margin-left: 50px;
+}
+
+@media screen and (max-width : 1030px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container{
+        order: 1;
+    }
+}
+@media screen and (max-width : 639px){
+    .description{
+        font-size: 10px;
+    }
+}
